@@ -1,0 +1,144 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
+
+body {
+    max-width: 1440px;
+    /* border: 2px solid red; */
+}
+
+/* nav bar starts */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.nav-li {
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* influencer section start */
+
+.influencer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    /* border: 2px solid red; */
+}
+
+.influencer-content h1 {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+
+}
+
+.influencer-content p {
+    margin-top: px;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+
+
+}
+
+.primary-btn {
+    border: 0;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    gap: 8px;
+    padding:5px 20px 0px 20px;
+
+}
+.img-container{
+    background-image: url(../images/Circle\ design.svg);
+
+}
+
+
+
+/* responsive for small device */
+@media screen and (max-width: 576px) {
+    /* header section responsiv start */
+    nav{
+        flex-direction: column;
+        /* text-align: center; */
+        padding: 5px;
+    }
+    nav>ul{
+        flex-direction: column;
+        
+    }
+    .influencer-content{
+        flex-direction: column-reverse;
+        padding: 50px;
+        justify-content: space-between;
+    }
+    .influencer-content, 
+    h1, 
+    p
+     {
+        text-align: center;
+        padding: 40px;
+    }
+     /* header section responsiv end */
+   
+}
+
+/* responsive fo medium device */
+@media screen and (min-width: 576) and (max-width: 960px) {
+    nav{
+        flex-direction: column;
+        padding: 5px;
+    }
+    nav>ul{
+        flex-direction: column;
+        
+    }
+    .influencer-content{
+        flex-direction: column-reverse;
+        padding: 50px;
+        justify-content: space-between;
+    }
+    .influencer-content, 
+    h1, 
+    p {
+        text-align: center;
+        padding: 40px;
+    }
+   
+}
